@@ -82,21 +82,34 @@ best_student2.finished_courses += ['First step on Python']
 best_student3.finished_courses += ['First step on Python']
 
 cool_mentor = Reviewer('Erick', 'Pedigree')
-cool_mentor.courses_attached += ['Python'], ['Java'], ['CSharp'], ['Pascal']
+cool_mentor.courses_attached += ['Python']
+cool_mentor.courses_attached += ['Java']
+cool_mentor.courses_attached += ['CSharp']
+cool_mentor.courses_attached += ['Pascal']
 
 cool_lector = Lecturer('Jonh', 'Snow')
-cool_lector.courses_attached += ['Python'], ['Java'], ['CSharp'], ['Pascal']
+cool_lector.courses_attached += ['Python']
+cool_lector.courses_attached += ['Java']
+cool_lector.courses_attached += ['CSharp']
+cool_lector.courses_attached += ['Pascal']
 
 
 
 
-best_student1.courses_in_progress += ['Python'], ['Java'], ['Pascal'], ['CSharp']
-best_student2.courses_in_progress += ['Python'], ['Pascal'], ['CSharp']
-best_student3.courses_in_progress += ['Python'], ['Java'], ['C++']
+best_student1.courses_in_progress += ['Python']
+best_student1.courses_in_progress += ['Java']
+best_student1.courses_in_progress += ['Pascal']
+best_student1.courses_in_progress += ['CSharp']
+best_student2.courses_in_progress += ['Python']
+best_student2.courses_in_progress += ['Pascal']
+best_student2.courses_in_progress += ['CSharp']
+best_student3.courses_in_progress += ['Python']
+best_student3.courses_in_progress += ['Java']
+best_student3.courses_in_progress += ['C++']
 
-best_student1.rate_lecturer(cool_lector, ['Python'],10)
+best_student1.rate_lecturer(cool_lector, ['Python'],6)
 best_student2.rate_lecturer(cool_lector, ['Python'],10)
-best_student3.rate_lecturer(cool_lector, ['Python'],10)
+best_student3.rate_lecturer(cool_lector, ['Python'], 8)
 
 
 
@@ -113,5 +126,7 @@ cool_mentor.rate_hw(best_student2, 'Pascal', 5)
 cool_mentor.rate_hw(best_student3, 'Java', 9)
 
 print(cool_mentor)
-
-
+print(best_student1)
+print(best_student2)
+print(best_student3)
+print(cool_lector)
